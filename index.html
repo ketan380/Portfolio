@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketan Sapkale | Inside Ketan's Dev Space — IT Engineering &amp; Backend Developer</title>
+  <meta name="description"
+    content="Personal developer portfolio of Ketan Sapkale, an Information Technology engineering student specializing in Python, Django, Django REST Framework, and backend architectures. Explore projects, coding profiles, and interactive dev space.">
+  <meta name="keywords"
+    content="Ketan Sapkale, Python Developer, Django Developer, Django REST Framework, Backend Developer, IT Engineering, CodeChef, GitHub, Web Development">
+  <meta name="author" content="Ketan Sapkale">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ketan Sapkale | Inside Ketan's Dev Space">
+  <meta property="og:description"
+    content="I build. I learn. I improve. IT Engineering Student | Python &amp; Django Developer | Backend Development Enthusiast.">
+  <meta property="og:url" content="https://github.com/ketan380">
+
+  <!-- SVG Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070913'/%3E%3Cpath d='M8 10l6 6-6 6M16 22h8' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       TOP COMMAND BAR (NAVIGATION & SYSTEM STATUS)
+       ======================================================================== -->
+  <header class="command-bar" id="command-bar">
+    <div class="container command-container">
+      <!-- Brand & Telemetry Badge -->
+      <a href="#home" class="brand-telemetry" aria-label="Ketan Sapkale - Dev Space">
+        <span class="cmd-prompt-sym">&gt;_</span>
+        <div class="brand-title-wrap">
+          <span class="brand-author">Ketan Sapkale</span>
+          <span class="brand-subcode">DEV SPACE // BACKEND</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="cmd-nav-links" aria-label="Main Navigation">
+        <a href="#home" class="cmd-nav-link active">Home</a>
+        <a href="#dev-space" class="cmd-nav-link">Dev Space</a>
+        <a href="#coding-profiles" class="cmd-nav-link">Profiles</a>
+        <a href="#about" class="cmd-nav-link">About</a>
+        <a href="#skills" class="cmd-nav-link">Skills</a>
+        <a href="#journey" class="cmd-nav-link">Journey</a>
+        <a href="#projects" class="cmd-nav-link">Projects</a>
+        <a href="#education" class="cmd-nav-link">Education</a>
+        <a href="#contact" class="cmd-nav-link">Contact</a>
+      </nav>
+
+      <!-- Command Actions -->
+      <div class="cmd-nav-actions">
+        <!-- Theme Switcher -->
+        <button id="theme-switch-btn" class="theme-switch-btn" aria-label="Toggle Theme" title="Toggle dark / light theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Resume Modal Trigger -->
+        <a href="#resume" class="cmd-btn cmd-btn-secondary cmd-btn-sm open-resume-modal">
+          Resume
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-cmd-toggle" class="mobile-cmd-toggle" aria-label="Open mobile navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-cmd-drawer" class="mobile-cmd-drawer">
+    <a href="#home" class="mobile-cmd-link active">Home</a>
+    <a href="#dev-space" class="mobile-cmd-link">Dev Space (Terminal)</a>
+    <a href="#coding-profiles" class="mobile-cmd-link">Profiles (GitHub &amp; CodeChef)</a>
+    <a href="#about" class="mobile-cmd-link">About</a>
+    <a href="#skills" class="mobile-cmd-link">Skills</a>
+    <a href="#journey" class="mobile-cmd-link">Journey</a>
+    <a href="#projects" class="mobile-cmd-link">Projects</a>
+    <a href="#education" class="mobile-cmd-link">Education</a>
+    <a href="#contact" class="mobile-cmd-link">Contact</a>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="#resume" class="cmd-btn cmd-btn-primary open-resume-modal" style="width: 100%;">
+        View Resume Overview
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 1: CINEMATIC HERO SECTION
+         ======================================================================== -->
+    <section class="section hero-command-center" id="home">
+      <div class="container hero-asymmetric-grid">
+        <!-- Editorial Left Column -->
+        <div class="hero-editorial reveal-entry">
+          <div class="hero-badge-tag">
+            <span class="status-beacon"></span>
+            <span>INFORMATION TECHNOLOGY · BACKEND DEVELOPER</span>
+          </div>
+
+          <h1 class="hero-name-heading" id="hero-title">
+            <span class="reveal-line"><span class="anim-word">Ketan</span> <span class="anim-word accent-cyan">Sapkale<span class="accent-dot">.</span></span></span>
+            <span class="reveal-line sub-reveal-line"><span class="anim-word gradient-title">I build.</span> <span class="anim-word">I learn.</span> <span class="anim-word violet-glow">I improve<span class="accent-dot">.</span></span></span>
+          </h1>
+
+          <div class="hero-support-headline">
+            IT Engineering Student | Python &amp; Django Developer | Backend Development Enthusiast
+          </div>
+
+          <p class="hero-manifesto-desc">
+            "I enjoy building practical web applications, developing backend systems, and learning technologies that solve real-world problems."
+          </p>
+
+          <!-- Primary Actions -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="cmd-btn cmd-btn-primary">
+              Explore My Work
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="cmd-btn cmd-btn-secondary">
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Verified Real Profile Links Area -->
+          <div class="hero-profile-anchors">
+            <!-- GitHub Link -->
+            <a href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer" class="profile-anchor-chip"
+              title="GitHub: ketan380">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              <span>github.com/ketan380 ↗</span>
+            </a>
+
+            <!-- CodeChef Link -->
+            <a href="https://www.codechef.com/users/rcp_cc_774" target="_blank" rel="noopener noreferrer"
+              class="profile-anchor-chip chip-codechef" title="CodeChef: rcp_cc_774">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>codechef/rcp_cc_774 ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Profile Portrait & Dev Badge -->
+        <div class="hero-portrait-column reveal-entry">
+          <div class="hero-portrait-card">
+            <div class="portrait-image-wrapper">
+              <img src="assets/images/profile.jpg" alt="Ketan Sapkale - Developer Portrait" class="portrait-img">
+              <div class="portrait-glow-overlay"></div>
+              <div class="portrait-corner-tag">DEV SPACE</div>
+            </div>
+
+            <div class="portrait-meta-footer">
+              <div class="portrait-status-dot">
+                <span class="status-dot-active"></span>
+                <span class="status-text">AVAILABLE FOR INTERNSHIPS</span>
+              </div>
+              <div class="portrait-quick-nav">
+                <a href="#dev-space" class="portrait-term-link">Open Terminal ↓</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: INTERACTIVE DEVELOPER TERMINAL ("Inside Ketan's Dev Space")
+         ======================================================================== -->
+    <section class="section terminal-section" id="dev-space">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">INTERACTIVE SOFTWARE WORKSPACE</span>
+          <h2 class="section-headline">Inside Ketan's Dev Space</h2>
+          <p class="section-subtext">
+            A live developer terminal running directly in your browser. Type commands or click the suggestion chips to
+            inspect my background, skills, featured projects, and live profile destinations.
+          </p>
+        </div>
+
+        <!-- Terminal Shell Container -->
+        <div class="interactive-terminal-wrapper reveal-entry" id="interactive-terminal-box" style="margin-top: 36px;">
+          <!-- Terminal Titlebar -->
+          <div class="term-titlebar">
+            <div class="term-window-controls">
+              <span class="ctrl-dot dot-close"></span>
+              <span class="ctrl-dot dot-min"></span>
+              <span class="ctrl-dot dot-max"></span>
+            </div>
+            <div class="term-title-text">
+              <span class="term-title-icon">&gt;_</span>
+              <span>ketan@dev-space:~ (zsh)</span>
+            </div>
+            <div class="term-sys-stats">
+              <span class="sys-badge">STATUS: INTERACTIVE</span>
+              <span class="sys-badge">PORT: 8000</span>
+            </div>
+          </div>
+
+          <!-- Suggested Quick Command Chips -->
+          <div class="term-suggested-strip">
+            <span class="suggest-label">Suggestions:</span>
+            <div class="suggest-chips-scroll">
+              <button type="button" class="term-chip-btn" data-cmd="help">help</button>
+              <button type="button" class="term-chip-btn" data-cmd="about">about</button>
+              <button type="button" class="term-chip-btn" data-cmd="projects">projects</button>
+              <button type="button" class="term-chip-btn" data-cmd="skills">skills</button>
+              <button type="button" class="term-chip-btn" data-cmd="github">github</button>
+              <button type="button" class="term-chip-btn" data-cmd="codechef">codechef</button>
+              <button type="button" class="term-chip-btn" data-cmd="contact">contact</button>
+              <button type="button" class="term-chip-btn chip-clear" data-cmd="clear">clear</button>
+            </div>
+          </div>
+
+          <!-- Terminal Screen Output -->
+          <div class="term-screen" id="terminal-output" tabindex="0" role="region" aria-label="Terminal Output Display">
+            <div class="term-welcome-msg">
+              <pre class="term-ascii-logo">
+ __  __     _              _       ____                  ____                      
+|  \/  |___| |_ __ _ _ __ ( )___  |  _ \  _____   __   / ___| _ __   __ _  ___ ___ 
+| |\/| / _ \ __/ _` | '_ \|// __| | | | |/ _ \ \ / /   \___ \| '_ \ / _` |/ __/ _ \
+| |  |  __/ || (_| | | | | \__ \ | |_| |  __/\ V /     ___) | |_) | (_| | (_|  __/
+|_|  |_|\___|\__\__,_|_| |_| |___/ |____/ \___| \_/     |____/| .__/ \__,_|\___\___|
+                                                               |_|                  </pre>
+              <div class="term-welcome-title">Inside Ketan's Dev Space · Interactive Console [v2.4]</div>
+              <div class="term-welcome-sub">
+                Type <span class="term-cmd-hint">help</span> to view all commands, or click any suggestion chip above.
+                Supports <kbd>Enter</kbd> to run and <kbd>↑</kbd>/<kbd>↓</kbd> for command history.
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Interactive Input Line Form -->
+          <form id="terminal-form" class="term-input-row">
+            <label for="terminal-input" class="term-prompt">ketan@dev-space:~$ </label>
+            <input type="text" id="terminal-input" class="term-input" autocomplete="off" autocorrect="off"
+              autocapitalize="off" spellcheck="false" placeholder="Type command here (e.g., 'projects', 'about')...">
+            <button type="submit" class="term-submit-trigger" title="Run command">
+              <span>Execute</span>
+              <span class="term-enter-sym">↵</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: CODING IDENTITY ("Code. Build. Solve.")
+         ======================================================================== -->
+    <section class="destinations-section" id="coding-profiles">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">CODING IDENTITIES</span>
+          <h2 class="section-headline">Code. Build. Solve.</h2>
+          <p class="section-subtext">
+            My actual coding profiles showcasing real repository commits, backend architecture implementations, and
+            consistent algorithmic problem-solving practice.
+          </p>
+        </div>
+
+        <div class="destinations-grid" style="margin-top: 48px;">
+          <!-- CARD A: GITHUB -->
+          <article class="destination-card reveal-entry">
+            <div>
+              <div class="dest-header-row">
+                <div class="dest-icon-container">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </div>
+                <span class="dest-status-badge">CODEBASE &amp; ARCHITECTURE</span>
+              </div>
+
+              <div class="dest-label">VERSION CONTROL · OPEN REPOSITORIES</div>
+              <h3 class="dest-title">GitHub</h3>
+              <p class="dest-subtitle">Projects, repositories, and development work.</p>
+              <p class="dest-desc">
+                Inspect my full-stack Python/Django codebases, Django REST Framework serialization structures, database
+                models, and frontend integrations.
+              </p>
+
+              <div class="dest-metrics-strip">
+                <span>HANDLE: @ketan380</span>
+                <span>•</span>
+                <span>STACK: Python, Django, DRF</span>
+              </div>
+            </div>
+
+            <div class="dest-action-row">
+              <a href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer"
+                class="cmd-btn cmd-btn-primary">
+                Explore My GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD B: CODECHEF -->
+          <article class="destination-card card-codechef reveal-entry">
+            <div>
+              <div class="dest-header-row">
+                <div class="dest-icon-container">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <span class="dest-status-badge"
+                  style="color: var(--violet); border-color: rgba(168, 85, 247, 0.35);">ALGORITHMIC LOGIC</span>
+              </div>
+
+              <div class="dest-label">PROBLEM SOLVING · PRACTICE</div>
+              <h3 class="dest-title">CodeChef</h3>
+              <p class="dest-subtitle">Competitive programming and problem-solving practice.</p>
+              <p class="dest-desc">
+                Follow my continuous problem-solving journey, algorithmic practice, and implementation of data
+                structures in structured programming challenges.
+              </p>
+
+              <div class="dest-metrics-strip">
+                <span>HANDLE: rcp_cc_774</span>
+                <span>•</span>
+                <span>DOMAIN: Logic &amp; Data Structures</span>
+              </div>
+            </div>
+
+            <div class="dest-action-row">
+              <a href="https://www.codechef.com/users/rcp_cc_774" target="_blank" rel="noopener noreferrer"
+                class="cmd-btn cmd-btn-secondary" style="border-color: var(--violet); color: var(--violet);">
+                Visit My CodeChef ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: ABOUT ME (ASYMMETRIC EDITORIAL SPREAD)
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">BACKGROUND &amp; PHILOSOPHY</span>
+          <h2 class="section-headline">Engineering Mindset &amp; Journey</h2>
+          <p class="section-subtext">
+            From technical diploma foundations to engineering degree specializations in backend architectures.
+          </p>
+        </div>
+
+        <div class="about-asymmetric-spread" style="margin-top: 48px;">
+          <!-- Editorial Prose Left -->
+          <div class="about-editorial-prose reveal-entry">
+            <p class="prose-lead">
+              I am an Information Technology engineering student who started with a 3-year Diploma in Computer
+              Engineering at KCE Society's College of Engineering &amp; Management, driven by how software works beneath
+              the surface.
+            </p>
+            <p class="prose-body">
+              My diploma education grounded me in the fundamentals of computing—structured programming, memory
+              management, operating system layers, and relational schema theory. During those years, I found myself
+              drawn toward backend engineering: how databases organize connections, how endpoints handle requests
+              securely, and how servers reliably power user experiences.
+            </p>
+            <p class="prose-body">
+              Advancing into degree-level Information Technology engineering allowed me to scale this interest into
+              modern web architectures. Today, I build with Python, Django, and Django REST Framework, focusing on
+              writing clean code, designing clean relational schemas in SQLite and MySQL, and delivering intuitive,
+              maintainable software.
+            </p>
+
+            <div class="journey-callout-box">
+              <h4>The Diploma-to-Degree Advantage</h4>
+              <p>
+                Hands-on practical laboratory work and deep foundational computer engineering principles established
+                during my diploma now accelerate my ability to understand system design, debugging, and framework
+                internals in IT engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Technical Pillars Right -->
+          <div class="tech-pillars-stack reveal-entry">
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-num">01</span>
+                <h4>Backend &amp; API Development</h4>
+              </div>
+              <p>Designing structured ViewSets, serializers, error handlers, and predictable RESTful API endpoints with
+                Django REST Framework.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-num">02</span>
+                <h4>Database Architecture</h4>
+              </div>
+              <p>Structuring relational models, foreign-key relationships, and indexing in SQLite and MySQL for
+                responsive data queries.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-num">03</span>
+                <h4>Full-Stack Web Integration</h4>
+              </div>
+              <p>Connecting backend logic with semantic HTML5, modern CSS3, and JavaScript interfaces for cohesive user
+                experiences.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-num">04</span>
+                <h4>Pragmatic Problem Solving</h4>
+              </div>
+              <p>Practicing algorithmic thinking and clean coding standards through competitive programming and hands-on
+                projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: TOOLS I WORK WITH (TECHNICAL SKILL MAP)
+         ======================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">TECHNICAL CAPABILITIES</span>
+          <h2 class="section-headline">Tools I Work With</h2>
+          <p class="section-subtext">
+            Core technologies, backend frameworks, and engineering tools I utilize to build functional software systems.
+            No fake proficiency percentages—just real tools I practice with.
+          </p>
+        </div>
+
+        <div class="skills-blueprint-grid" style="margin-top: 48px;">
+          <!-- Category 1: Programming Languages -->
+          <div class="blueprint-panel reveal-entry">
+            <div class="blueprint-panel-header">
+              <div class="blueprint-panel-title">
+                <div class="blueprint-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Programming</h3>
+                  <span class="blueprint-subtag">CORE SYNTAX &amp; SCRIPTS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chips-cluster">
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #38bdf8;">
+                  <path
+                    d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm1 3h-2v3h3a2 2 0 0 0 2-2V5zm-2 14h2v-3h-3a2 2 0 0 0-2 2v1z">
+                  </path>
+                </svg>
+                <span>Python</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #facc15;">
+                  <path
+                    d="M3 3h18v18H3V3zm12.5 13.5c0 1.1-.9 2-2 2h-1v-4h1a2 2 0 0 1 2 2zm-5 0c0 1.1-.9 2-2 2H7v-4h1.5a2 2 0 0 1 2 2z">
+                  </path>
+                </svg>
+                <span>JavaScript</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #f97316;">
+                  <path d="M12 2L3 5l2 14 7 3 7-3 2-14-9-3z"></path>
+                </svg>
+                <span>HTML5</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #60a5fa;">
+                  <path
+                    d="M4 3l1.5 15L12 21l6.5-3L20 3H4zm13.2 4.5l-.2 2.5H8.7l.2 2h7.8l-.6 6-4.1 1.2-4.1-1.2-.3-3h2.1l.1 1.5 2.2.6 2.2-.6.3-3H7.5l-.5-6h10.2z">
+                  </path>
+                </svg>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend Development -->
+          <div class="blueprint-panel reveal-entry">
+            <div class="blueprint-panel-header">
+              <div class="blueprint-panel-title">
+                <div class="blueprint-icon" style="background: var(--violet-dim); color: var(--violet);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Backend</h3>
+                  <span class="blueprint-subtag">FRAMEWORKS &amp; APIS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chips-cluster">
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #34d399;">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2V7h2zm-4-1.5H7V9h2z"></path>
+                </svg>
+                <span>Django</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #a855f7;">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                  <line x1="4" y1="22" x2="4" y2="15"></line>
+                </svg>
+                <span>Django REST Framework</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #38bdf8;">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                <span>REST API development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database Management -->
+          <div class="blueprint-panel reveal-entry">
+            <div class="blueprint-panel-header">
+              <div class="blueprint-panel-title">
+                <div class="blueprint-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--emerald);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Database</h3>
+                  <span class="blueprint-subtag">RELATIONAL STORAGE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chips-cluster">
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #38bdf8;">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                  </path>
+                </svg>
+                <span>SQLite</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #f59e0b;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 12a4 4 0 0 1 8 0"></path>
+                </svg>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Workflow -->
+          <div class="blueprint-panel reveal-entry">
+            <div class="blueprint-panel-header">
+              <div class="blueprint-panel-title">
+                <div class="blueprint-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--amber);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Tools</h3>
+                  <span class="blueprint-subtag">WORKFLOW INFRASTRUCTURE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chips-cluster">
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #f97316;">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M18 15V9a3 3 0 0 0-3-3H9"></path>
+                </svg>
+                <span>Git</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #e2e8f0;">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                <span>GitHub</span>
+              </div>
+              <div class="blueprint-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #38bdf8;">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 6: DEVELOPMENT JOURNEY ("Currently Becoming Better At...")
+         ======================================================================== -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">ENGINEERING LOG</span>
+          <h2 class="section-headline">Currently Becoming Better At...</h2>
+          <p class="section-subtext">
+            My development journal and continuous learning roadmap. Focused on solidifying backend architecture fundamentals and clean system design.
+          </p>
+        </div>
+
+        <div class="journal-notebook-grid" style="margin-top: 48px;">
+          <!-- Entry 01 -->
+          <article class="journal-entry-card reveal-entry">
+            <div class="journal-entry-num">LOG_01</div>
+            <h3 class="journal-entry-title">Designing reliable REST APIs</h3>
+            <p class="journal-entry-desc">
+              Practicing consistent HTTP status code management, robust serializer payload validations, custom exception handlers, and idempotent endpoint structures with Django REST Framework.
+            </p>
+            <div class="journal-tag">DRF · Serializers · HTTP Statuses</div>
+          </article>
+
+          <!-- Entry 02 -->
+          <article class="journal-entry-card reveal-entry">
+            <div class="journal-entry-num">LOG_02</div>
+            <h3 class="journal-entry-title">Understanding database design and relationships</h3>
+            <p class="journal-entry-desc">
+              Exploring relational schema design, 1-to-many and many-to-many foreign key relationships, query optimization (select_related &amp; prefetch_related), and indexing in SQLite and MySQL.
+            </p>
+            <div class="journal-tag">SQLite · MySQL · Indexing · ORM</div>
+          </article>
+
+          <!-- Entry 03 -->
+          <article class="journal-entry-card reveal-entry">
+            <div class="journal-entry-num">LOG_03</div>
+            <h3 class="journal-entry-title">Improving programming and problem-solving skills</h3>
+            <p class="journal-entry-desc">
+              Tackling algorithmic exercises on CodeChef, sharpening core Python constructs, and refining time and space complexity considerations across practical problems.
+            </p>
+            <div class="journal-tag">CodeChef · Python · Data Structures</div>
+          </article>
+
+          <!-- Entry 04 -->
+          <article class="journal-entry-card reveal-entry">
+            <div class="journal-entry-num">LOG_04</div>
+            <h3 class="journal-entry-title">Building complete web applications</h3>
+            <p class="journal-entry-desc">
+              Connecting backend business logic, session security, and database models to responsive, accessible client interfaces built with clean semantic HTML, CSS, and vanilla JavaScript.
+            </p>
+            <div class="journal-tag">Full-Stack · Django · JavaScript · UX</div>
+          </article>
+
+          <!-- Entry 05 -->
+          <article class="journal-entry-card reveal-entry">
+            <div class="journal-entry-num">LOG_05</div>
+            <h3 class="journal-entry-title">Writing clean and maintainable code</h3>
+            <p class="journal-entry-desc">
+              Adhering to PEP 8 guidelines, structuring modular Django apps with single-responsibility views, creating self-documenting code, and maintaining clean Git commits.
+            </p>
+            <div class="journal-tag">Clean Architecture · PEP 8 · Git</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 7: FEATURED PROJECTS
+         ======================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">REAL APPLICATION SHOWCASES</span>
+          <h2 class="section-headline">Featured Projects</h2>
+          <p class="section-subtext">
+            Practical web and backend applications demonstrating structured data models, clean API design, and full-stack development.
+          </p>
+        </div>
+
+        <div class="projects-deck" style="margin-top: 52px;">
+          <!-- PROJECT 1: PERSONAL DIGITAL CONTENT ORGANIZER (FLAGSHIP CASE STUDY) -->
+          <article class="project-feature-card flagship-card reveal-entry">
+            <div class="project-view-window">
+              <img src="assets/images/project-organizer.jpg" alt="Personal Digital Content Organizer Dashboard Screenshot">
+              <div class="project-view-overlay"></div>
+              <div class="flagship-corner-ribbon">FLAGSHIP PROJECT</div>
+            </div>
+
+            <div class="project-manifesto">
+              <div class="project-index-marker">
+                <span class="proj-cat-badge">Flagship Case Study</span>
+                <span class="proj-serial">PRJ-01</span>
+              </div>
+
+              <h3 class="project-card-title">Personal Digital Content Organizer</h3>
+
+              <div class="project-status-label">
+                <span class="status-indicator-dot"></span>
+                <span>In Active Development / Portfolio Showcase</span>
+              </div>
+
+              <p class="project-card-summary">
+                A web application designed to help users organize, categorize, search, and manage personal digital content such as documents, images, videos, notes, and links.
+              </p>
+
+              <div class="project-contributions-list">
+                <h5>My Contribution</h5>
+                <ul>
+                  <li><strong>Backend Development:</strong> Built Django application logic with structured models for tags, media types, and hierarchical categories.</li>
+                  <li><strong>REST API Development:</strong> Implemented Django REST Framework endpoints for dynamic searching, categorization, and filtering.</li>
+                  <li><strong>Database Integration:</strong> Structured SQLite relational database schema with indexing for responsive multi-attribute queries.</li>
+                </ul>
+              </div>
+
+              <div class="project-stack-tags">
+                <span class="proj-tech-pill">Python</span>
+                <span class="proj-tech-pill">Django</span>
+                <span class="proj-tech-pill">Django REST Framework</span>
+                <span class="proj-tech-pill">SQLite</span>
+                <span class="proj-tech-pill">HTML</span>
+                <span class="proj-tech-pill">CSS</span>
+                <span class="proj-tech-pill">JavaScript</span>
+              </div>
+
+              <div class="project-action-buttons">
+                <button class="cmd-btn cmd-btn-primary cmd-btn-sm open-project-modal" data-project="organizer">
+                  Inspect Architecture
+                </button>
+                <a href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer"
+                  class="cmd-btn cmd-btn-secondary cmd-btn-sm">
+                  GitHub Repository ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: PRIME PLUS EVENT PLANNER -->
+          <article class="project-feature-card invert-grid reveal-entry">
+            <div class="project-view-window">
+              <img src="assets/images/project-event-planner.jpg" alt="Prime Plus Event Planner Application Interface Screenshot">
+              <div class="project-view-overlay"></div>
+            </div>
+
+            <div class="project-manifesto">
+              <div class="project-index-marker">
+                <span class="proj-cat-badge" style="color: var(--violet); border-color: rgba(168, 85, 247, 0.3);">Event Management</span>
+                <span class="proj-serial">PRJ-02</span>
+              </div>
+
+              <h3 class="project-card-title">Prime Plus Event Planner</h3>
+
+              <p class="project-card-summary">
+                An event management web application designed to organize event-related information and support administrative and user workflows.
+              </p>
+
+              <div class="project-contributions-list">
+                <h5>My Contribution &amp; Features</h5>
+                <ul>
+                  <li>Engineered event workflows supporting multi-date scheduling, RSVP attendance tracking, and vendor coordination.</li>
+                  <li>Designed relational database models in SQLite structuring event tiers and budget calculation ledgers.</li>
+                  <li>Implemented responsive client interfaces with Bootstrap, HTML5, and CSS for administrative controls.</li>
+                </ul>
+              </div>
+
+              <div class="project-stack-tags">
+                <span class="proj-tech-pill">Python</span>
+                <span class="proj-tech-pill">Django</span>
+                <span class="proj-tech-pill">HTML</span>
+                <span class="proj-tech-pill">CSS</span>
+                <span class="proj-tech-pill">Bootstrap</span>
+                <span class="proj-tech-pill">SQLite</span>
+              </div>
+
+              <div class="project-action-buttons">
+                <button class="cmd-btn cmd-btn-primary cmd-btn-sm open-project-modal" data-project="event-planner">
+                  Inspect Architecture
+                </button>
+                <a href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer"
+                  class="cmd-btn cmd-btn-secondary cmd-btn-sm">
+                  GitHub Repository ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: RCPIT COLLEGE WEBSITE -->
+          <article class="project-feature-card reveal-entry">
+            <div class="project-view-window">
+              <img src="assets/images/project-academic.jpg" alt="RCPIT College Website Portal Screenshot">
+              <div class="project-view-overlay"></div>
+            </div>
+
+            <div class="project-manifesto">
+              <div class="project-index-marker">
+                <span class="proj-cat-badge" style="color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">Institutional Website</span>
+                <span class="proj-serial">PRJ-03</span>
+              </div>
+
+              <h3 class="project-card-title">RCPIT College Website</h3>
+
+              <p class="project-card-summary">
+                A responsive college website interface featuring navigation, institutional information, admissions, and contact sections.
+              </p>
+
+              <div class="project-contributions-list">
+                <h5>My Contribution &amp; Features</h5>
+                <ul>
+                  <li>Developed clean, accessible multi-section layout for academic department overviews, syllabus details, and admissions.</li>
+                  <li>Engineered interactive navigation bars with smooth mobile drawer transitions and section quick-links.</li>
+                  <li>Built with lightweight vanilla JavaScript and modern CSS for high performance and fast load times.</li>
+                </ul>
+              </div>
+
+              <div class="project-stack-tags">
+                <span class="proj-tech-pill">HTML</span>
+                <span class="proj-tech-pill">CSS</span>
+                <span class="proj-tech-pill">JavaScript</span>
+              </div>
+
+              <div class="project-action-buttons">
+                <button class="cmd-btn cmd-btn-primary cmd-btn-sm open-project-modal" data-project="rcpit">
+                  Inspect Architecture
+                </button>
+                <a href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer"
+                  class="cmd-btn cmd-btn-secondary cmd-btn-sm">
+                  GitHub Repository ↗
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 8: EDUCATION TIMELINE
+         ======================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">ACADEMIC TIMELINE</span>
+          <h2 class="section-headline">Education Timeline</h2>
+          <p class="section-subtext">
+            Strong foundations in computer engineering progressing into degree-level Information Technology engineering.
+          </p>
+        </div>
+
+        <div class="education-schematic-track" style="margin-top: 48px;">
+          <!-- Node 1: Degree in IT -->
+          <div class="edu-schematic-node reveal-entry">
+            <div class="edu-node-bullet"></div>
+            <div class="edu-card-content">
+              <div class="edu-header-flex">
+                <div>
+                  <h3 class="edu-degree-title">Bachelor of Engineering in Information Technology</h3>
+                  <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--cyan); margin-top: 2px;">
+                    Information Technology Engineering
+                  </div>
+                </div>
+                <span class="edu-status-pill">Currently Pursuing</span>
+              </div>
+
+              <p class="edu-narrative">
+                Direct Second Year engineering admission following completion of the computer engineering diploma.
+                Expanding technical knowledge into advanced data structures, web application architectures, software
+                engineering methodologies, database management systems, and network communication protocols.
+              </p>
+
+              <div class="edu-core-subjects">
+                <span class="edu-subject-tag">Data Structures &amp; Algorithms</span>
+                <span class="edu-subject-tag">Database Management Systems</span>
+                <span class="edu-subject-tag">Web Technologies</span>
+                <span class="edu-subject-tag">Software Engineering</span>
+                <span class="edu-subject-tag">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 2: Diploma in Computer Engineering -->
+          <div class="edu-schematic-node reveal-entry">
+            <div class="edu-node-bullet"></div>
+            <div class="edu-card-content">
+              <div class="edu-header-flex">
+                <div>
+                  <h3 class="edu-degree-title">Diploma in Computer Engineering</h3>
+                  <div
+                    style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet); margin-top: 2px;">
+                    KCE Society's College of Engineering &amp; Management
+                  </div>
+                </div>
+                <span class="edu-status-pill completed">Completed</span>
+              </div>
+
+              <p class="edu-narrative">
+                Three-year comprehensive technical diploma program. Established strong core foundations in computer
+                programming (C, C++, Java), algorithm design, relational DBMS concepts, computer hardware architecture,
+                and operating systems.
+              </p>
+
+              <div class="edu-core-subjects">
+                <span class="edu-subject-tag">C / C++ Programming</span>
+                <span class="edu-subject-tag">Data Structures</span>
+                <span class="edu-subject-tag">Relational DBMS</span>
+                <span class="edu-subject-tag">Operating Systems</span>
+                <span class="edu-subject-tag">Object-Oriented Programming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 9: CONTACT SECTION & TRANSMISSION
+         ======================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="reveal-entry">
+          <span class="section-meta-tag">GET IN TOUCH</span>
+          <h2 class="section-headline">Let's build something together.</h2>
+          <p class="section-subtext">
+            Whether you have an internship opportunity, a project to collaborate on, or wish to discuss backend
+            engineering, my inbox is open!
+          </p>
+        </div>
+
+        <div class="contact-transmission-grid" style="margin-top: 48px;">
+          <!-- Channels Left -->
+          <div class="contact-channels-column reveal-entry">
+            <!-- Email Channel -->
+            <div class="channel-card">
+              <div class="channel-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>DIRECT EMAIL</h4>
+                <p>ketansapkale2004@gmail.com</p>
+                <button class="copy-email-trigger" data-email="ketansapkale2004@gmail.com">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  Copy to clipboard
+                </button>
+              </div>
+            </div>
+
+            <!-- Profiles Channel -->
+            <div class="channel-card">
+              <div class="channel-icon-box" style="background: var(--violet-dim); color: var(--violet);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>VERIFIED CODING HUBS</h4>
+                <div style="display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap;">
+                  <a href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer"
+                    class="cmd-btn cmd-btn-secondary cmd-btn-sm">
+                    GitHub @ketan380 ↗
+                  </a>
+                  <a href="https://www.codechef.com/users/rcp_cc_774" target="_blank" rel="noopener noreferrer"
+                    class="cmd-btn cmd-btn-secondary cmd-btn-sm">
+                    CodeChef rcp_cc_774 ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Status -->
+            <div class="channel-card">
+              <div class="channel-icon-box" style="background: rgba(16, 185, 129, 0.1); color: var(--emerald);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>LOCATION &amp; STATUS</h4>
+                <p>Maharashtra, India</p>
+                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald); margin-top: 4px;">
+                  ● AVAILABLE FOR INTERNSHIPS &amp; PROJECTS
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transmission Form Right -->
+          <div class="transmission-form-panel reveal-entry">
+            <form id="contact-cmd-form" class="transmission-form">
+              <div id="cmd-form-alert" class="form-feedback-alert"></div>
+
+              <!-- Honeypot -->
+              <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+                <input type="text" name="_contact_hp" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-split-row">
+                <div class="input-block">
+                  <label for="name">NAME / SENDER *</label>
+                  <input type="text" id="name" name="name" class="cmd-input" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+                </div>
+                <div class="input-block">
+                  <label for="email">RETURN EMAIL *</label>
+                  <input type="email" id="email" name="email" class="cmd-input" placeholder="name@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="input-block">
+                <label for="subject">TOPIC / SUBJECT</label>
+                <input type="text" id="subject" name="subject" class="cmd-input"
+                  placeholder="Internship Opportunity / Backend Collaboration">
+              </div>
+
+              <div class="input-block">
+                <label for="message">TRANSMISSION MESSAGE *</label>
+                <textarea id="message" name="message" class="cmd-input"
+                  placeholder="Hello Ketan, I reviewed your portfolio and would like to connect regarding..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" id="cmd-submit-btn" class="cmd-btn cmd-btn-primary">
+                Send Message
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="command-footer">
+    <div class="container footer-flex-row">
+      <div>
+        <a href="#home" class="brand-telemetry" style="font-size: 0.95rem;">
+          <span class="cmd-prompt-sym" style="width: 28px; height: 28px; font-size: 0.8rem;">&gt;_</span>
+          <span style="font-family: var(--font-editorial); font-weight: 700;">Ketan Sapkale</span>
+        </a>
+        <div class="footer-telemetry-text" style="margin-top: 6px;">
+          "Inside Ketan's Dev Space" · Built with semantic HTML5, modern CSS3 &amp; vanilla JavaScript.
+        </div>
+      </div>
+
+      <div class="footer-anchor-list">
+        <a href="#dev-space" class="footer-anchor">Dev Space</a>
+        <a href="#coding-profiles" class="footer-anchor">Profiles</a>
+        <a href="#about" class="footer-anchor">About</a>
+        <a href="#skills" class="footer-anchor">Skills</a>
+        <a href="#journey" class="footer-anchor">Journey</a>
+        <a href="#projects" class="footer-anchor">Projects</a>
+        <a href="#education" class="footer-anchor">Education</a>
+        <a href="#contact" class="footer-anchor">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ========================================================================
+       RESUME INTERACTIVE MODAL
+       ======================================================================== -->
+  <div id="resume-modal" class="modal-layer" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+    <div class="modal-sheet">
+      <div class="modal-top-bar">
+        <h3 id="resume-title" class="modal-sheet-title">Resume Overview · Ketan Sapkale</h3>
+        <button class="modal-close-trigger close-resume-modal" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-scroll-body">
+        <div style="border-bottom: 2px solid var(--cyan); padding-bottom: 14px;">
+          <h2 style="font-family: var(--font-editorial); font-size: 1.8rem; font-weight: 800; color: var(--text-main);">
+            Ketan Sapkale</h2>
+          <div style="font-family: var(--font-mono); color: var(--cyan); font-size: 0.92rem; margin-top: 4px;">
+            Information Technology Engineering Student · Python &amp; Backend Developer
+          </div>
+          <div
+            style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); margin-top: 6px; display: flex; flex-wrap: wrap; gap: 16px;">
+            <span>📧 ketansapkale2004@gmail.com</span>
+            <span>📍 Maharashtra, India</span>
+            <span>🔗 github.com/ketan380</span>
+            <span>⚡ codechef.com/users/rcp_cc_774</span>
+          </div>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet); text-transform: uppercase; margin-bottom: 6px;">
+            Profile Summary</h4>
+          <p style="font-size: 0.94rem; color: var(--text-muted); line-height: 1.65;">
+            Information Technology engineering student with a completed Diploma in Computer Engineering. Strong foundation
+            in structured programming, data structures, and relational databases. Focused on developing backend systems,
+            REST APIs, and practical web applications with Python, Django, and Django REST Framework.
+          </p>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet); text-transform: uppercase; margin-bottom: 8px;">
+            Education</h4>
+          <div style="margin-bottom: 12px;">
+            <div style="font-weight: 700; color: var(--text-main); display: flex; justify-content: space-between;">
+              <span>Bachelor of Engineering in Information Technology</span>
+              <span style="font-family: var(--font-mono); color: var(--cyan); font-size: 0.82rem;">Pursuing</span>
+            </div>
+            <div style="font-size: 0.88rem; color: var(--text-dim);">Direct Second Year Engineering Admission</div>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: var(--text-main); display: flex; justify-content: space-between;">
+              <span>Diploma in Computer Engineering</span>
+              <span style="font-family: var(--font-mono); color: var(--emerald); font-size: 0.82rem;">Completed</span>
+            </div>
+            <div style="font-size: 0.88rem; color: var(--text-dim);">KCE Society's College of Engineering &amp; Management</div>
+          </div>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet); text-transform: uppercase; margin-bottom: 8px;">
+            Technical Skills</h4>
+          <ul style="padding-left: 20px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            <li><strong>Programming:</strong> Python, JavaScript, HTML5, CSS3</li>
+            <li><strong>Backend:</strong> Django, Django REST Framework, REST API development</li>
+            <li><strong>Databases:</strong> SQLite, MySQL</li>
+            <li><strong>Tools &amp; Workflow:</strong> Git, GitHub, VS Code</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet); text-transform: uppercase; margin-bottom: 8px;">
+            Featured Projects</h4>
+          <ul style="padding-left: 20px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            <li><strong>Personal Digital Content Organizer:</strong> Web app for personal digital content organization with Python, Django, DRF, and SQLite.</li>
+            <li><strong>Prime Plus Event Planner:</strong> Event management and workflow application in Python, Django, and SQLite.</li>
+            <li><strong>RCPIT College Website:</strong> Responsive institutional web portal in HTML, CSS, and JavaScript.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-bottom-actions">
+        <button class="cmd-btn cmd-btn-secondary cmd-btn-sm close-resume-modal">Close</button>
+        <button class="cmd-btn cmd-btn-primary cmd-btn-sm" onclick="window.print()">
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       PROJECT ARCHITECTURE MODAL
+       ======================================================================== -->
+  <div id="project-modal" class="modal-layer" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+    <div class="modal-sheet" style="max-width: 820px;">
+      <div class="modal-top-bar">
+        <div>
+          <h3 id="pm-title" class="modal-sheet-title">Project Architecture</h3>
+          <div id="pm-meta"
+            style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan); margin-top: 2px;"></div>
+        </div>
+        <button class="modal-close-trigger close-project-modal" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-scroll-body">
+        <div
+          style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-subtle); max-height: 280px;">
+          <img id="pm-image" src="" alt="Project Visual Preview" style="width: 100%; height: 280px; object-fit: cover;">
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--cyan); text-transform: uppercase; margin-bottom: 6px;">
+            System Overview</h4>
+          <p id="pm-overview" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65;"></p>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--cyan); text-transform: uppercase; margin-bottom: 6px;">
+            My Contribution</h4>
+          <p id="pm-contrib" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65;"></p>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--cyan); text-transform: uppercase; margin-bottom: 6px;">
+            Engineering &amp; Architecture Notes</h4>
+          <ul id="pm-arch"
+            style="padding-left: 20px; list-style: square; color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--cyan); text-transform: uppercase; margin-bottom: 6px;">
+            Technology Stack</h4>
+          <div id="pm-stack" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+        </div>
+      </div>
+
+      <div class="modal-bottom-actions">
+        <button class="cmd-btn cmd-btn-secondary cmd-btn-sm close-project-modal">Close</button>
+        <a id="pm-gh-link" href="https://github.com/ketan380" target="_blank" rel="noopener noreferrer"
+          class="cmd-btn cmd-btn-primary cmd-btn-sm">
+          GitHub Repository ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING CHATBOX & CONTACT MESSAGING WIDGET (Preserved)
+       ======================================================================== -->
+  <!-- 1. Floating Chat Trigger Button -->
+  <button id="chat-toggle-btn" class="cmd-chat-trigger" aria-label="Open contact chat" aria-expanded="false" aria-controls="chat-window">
+    <svg class="chat-icon-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <svg class="chat-icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+    <span class="chat-status-pulse" id="chat-unread-badge" title="Online &amp; ready to connect"></span>
+  </button>
+
+  <!-- 2. Floating Chat Window -->
+  <div id="chat-window" class="cmd-chat-window" role="dialog" aria-modal="false" aria-hidden="true" aria-labelledby="chat-win-title">
+    <!-- Header -->
+    <div class="cmd-chat-header">
+      <div class="chat-header-user">
+        <div class="chat-avatar-badge">
+          &gt;_
+          <span class="chat-avatar-dot"></span>
+        </div>
+        <div class="chat-header-info">
+          <div id="chat-win-title" class="chat-header-title">Ketan Sapkale</div>
+          <div class="chat-header-status">
+            <span style="display: inline-block; width: 6px; height: 6px; background: var(--emerald); border-radius: 50%;"></span>
+            Online · IT Engineering &amp; Backend
+          </div>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button id="chat-minimize-btn" class="chat-ctrl-btn" aria-label="Minimize chat" title="Minimize chat">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <button id="chat-close-btn" class="chat-ctrl-btn" aria-label="Close chat" title="Close chat">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scrollable Body -->
+    <div class="cmd-chat-body">
+      <!-- Welcome Message Bubble -->
+      <div class="chat-welcome-bubble">
+        <div class="chat-bubble-telemetry">
+          <span>&gt; KETAN_SYS // TRANSMISSION</span>
+          <span>Direct Contact</span>
+        </div>
+        <p class="chat-bubble-text">
+          Hi! Thanks for visiting my dev space. Have a question or want to discuss a project or internship? Send me a message!
+        </p>
+      </div>
+
+      <!-- Quick Contact Options -->
+      <div class="chat-quick-section">
+        <div class="chat-quick-label">Quick Topics:</div>
+        <div class="chat-chips-wrap">
+          <button type="button" class="chat-chip-btn" data-topic="Project Inquiry">
+            ⚡ Project Inquiry
+          </button>
+          <button type="button" class="chat-chip-btn" data-topic="Internship Opportunity">
+            💼 Internship Opportunity
+          </button>
+          <button type="button" class="chat-chip-btn" data-topic="Collaboration">
+            🤝 Collaboration
+          </button>
+        </div>
+      </div>
+
+      <!-- Visitor Message Form -->
+      <form id="chat-contact-form" class="chat-form" novalidate>
+        <!-- Security Honeypot Anti-Spam -->
+        <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+          <label for="chat-hp-field">Security verification field</label>
+          <input type="text" id="chat-hp-field" name="_hp_security_trap" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Name Field -->
+        <div class="chat-form-group">
+          <label for="chat-sender-name" class="chat-label">Name *</label>
+          <input type="text" id="chat-sender-name" name="name" class="chat-input" placeholder="Your name" required autocomplete="name">
+        </div>
+
+        <!-- Email Field -->
+        <div class="chat-form-group">
+          <label for="chat-sender-email" class="chat-label">Email Address *</label>
+          <input type="email" id="chat-sender-email" name="email" class="chat-input" placeholder="name@example.com" required autocomplete="email">
+        </div>
+
+        <!-- Subject Field -->
+        <div class="chat-form-group">
+          <label for="chat-sender-subject" class="chat-label">Subject / Topic</label>
+          <input type="text" id="chat-sender-subject" name="subject" class="chat-input" placeholder="Project Inquiry / Collaboration">
+        </div>
+
+        <!-- Message Field -->
+        <div class="chat-form-group">
+          <label for="chat-sender-message" class="chat-label">Message *</label>
+          <textarea id="chat-sender-message" name="message" class="chat-input" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <!-- Live Feedback Alert -->
+        <div id="chat-form-alert" class="chat-form-alert" aria-live="polite"></div>
+
+        <!-- Send Message Button -->
+        <button type="submit" id="chat-submit-btn" class="cmd-btn cmd-btn-primary chat-submit-btn">
+          <span>Send Message</span>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+
+        <!-- Footer Transmission Note -->
+        <div class="chat-footer-note">
+          🔒 Direct inbox delivery via EmailJS · No spam
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- EmailJS Official Browser SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- EmailJS Credentials Configuration -->
+  <script src="js/email-config.js"></script>
+  <!-- Floating Chatbox Interaction Logic -->
+  <script src="js/chatbox.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
